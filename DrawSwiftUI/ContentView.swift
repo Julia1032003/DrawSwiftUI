@@ -10,21 +10,23 @@ import SwiftUI
 
 
 struct ContentView: View {
+
     
-    var background:some View{
+    var body: some View {
+        
+        
+        ZStack{
+         
+        //背景圖
         Image("sky")
         .resizable()
         .scaledToFit()
-        //.frame(width: 300, height: 300)
+        .frame(width: 900, height: 900)
+            
+        //藍皮普快列車
+        Group{
+            
        
-            
-    }
-    
-    
-    var body: some View {
-    
-        ZStack{
-            
         //車輪
         Group{
             
@@ -626,7 +628,8 @@ struct ContentView: View {
         
             
     }
-    .offset(x: 90,y: -90)
+    .offset(x: 180,y: 200)
+    }
         
         
     }
